@@ -1,7 +1,4 @@
-﻿using System;
-using System.ComponentModel;
-using System.Data.Common;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Runner : MonoBehaviour
@@ -62,8 +59,6 @@ public interface IMover
     void Tick();
 }
 
-
-
 public class Mover : IMover
 {
     private readonly Rigidbody _rigidbody;
@@ -74,9 +69,7 @@ public class Mover : IMover
     private readonly float _maxRunForwardVelocity;
     private readonly float _maxRunBackWardsVelocity;
 
-    private Vector3 GroundVelocity => new Vector3(_rigidbody.velocity.x, 0, _rigidbody.velocity.z);
-
-    public bool MovingForward => Vector3.Dot(GroundVelocity, _transform.forward) > 0;
+    public bool MovingForward => Vector3.Dot(_rigidbody.GroundVelocity(), _transform.forward) > 0;
 
     public Mover(Runner runner, float maxSpeed)
     {
@@ -106,15 +99,16 @@ public class Mover : IMover
         //
         // _rigidbody.velocity = velocity;
 
-        var groundVelocity = GroundVelocity;
+        var groundVelocityMag = _rigidbody.GroundVelocity().magnitude;
         var currentMaxVelocity = MovingForward ? _maxRunForwardVelocity : _maxRunBackWardsVelocity;
 
-        if (groundVelocity.magnitude < currentMaxVelocity)
+        if (groundVelocityMag < currentMaxVelocity)
         {
-            _rigidbody.AddForce(_transform.forward * _acceleration * PlayerInput.Instance.Acceleration);
+            var currentAcceleration = _acceleration * (1f - (groundVelocityMag / currentMaxVelocity));
+            _rigidbody.AddForce(_transform.forward * currentAcceleration * PlayerInput.Instance.Acceleration);
         }
 
-        if (groundVelocity.magnitude > 0.1f)
+        if (groundVelocityMag > 0.1f)
         {
             _transform.Rotate(_transform.up, _rotationSpeed * Time.fixedDeltaTime * PlayerInput.Instance.Horizontal);
         }
@@ -126,10 +120,32 @@ public static class RigidBodyExtensions
     public static bool MovingForward(this Rigidbody rigidbody)
     {
         // If not moving Calculates as if going forward
-        if (rigidbody.velocity.magnitude < 0.01 && rigidbody.velocity.magnitude > -0.01) return true;
+        if (rigidbody.velocity.magnitude < 0.1f && rigidbody.velocity.magnitude > -0.1f) return true;
         
         var groundVelocity = rigidbody.velocity;
         groundVelocity.y = 0f;
         return Vector3.Dot(groundVelocity, rigidbody.transform.forward) > 0;
+    }
+
+    public static float LocalForwardVelocity(this Rigidbody rigidbody)
+    {
+        float magnitude = Vector3.Project(rigidbody.GroundVelocity(), rigidbody.transform.forward).magnitude;
+        if (magnitude < 0.1f) return 0f;
+
+        return magnitude * (Vector3.Dot(rigidbody.GroundVelocity(), rigidbody.transform.forward) >= 0 ? 1f : -1f);
+    }
+
+    public static Vector3 GroundVelocity(this Rigidbody rigidbody)
+    {
+        Vector3 velocity = rigidbody.velocity;
+        return new Vector3(velocity.x, 0, velocity.z);
+    }
+
+    public static float LocalSideVelocity(this Rigidbody rigidbody)
+    {
+        float magnitude = Vector3.Project(rigidbody.GroundVelocity(), rigidbody.transform.right).magnitude;
+        if (magnitude < 0.1f) return 0f;
+
+        return magnitude * (Vector3.Dot(rigidbody.GroundVelocity(), rigidbody.transform.right) >= 0 ? 1f : -1f);
     }
 }
