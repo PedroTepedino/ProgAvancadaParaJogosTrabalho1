@@ -5,10 +5,14 @@ using UnityEngine.Experimental.TerrainAPI;
 public class PlayerInput : MonoBehaviour
 {
     public event Action<bool> OnWalking;
-    
+
     public static PlayerInput Instance { get; private set; }
-    
+
     public float Vertical => Input.GetAxis("Vertical");
+
+    public float HorizontalCam => Input.GetAxis("HorizontalCam");
+
+    public float ForwardCam => Input.GetAxis("MouseScrollWheel");
 
     public int Acceleration
     {

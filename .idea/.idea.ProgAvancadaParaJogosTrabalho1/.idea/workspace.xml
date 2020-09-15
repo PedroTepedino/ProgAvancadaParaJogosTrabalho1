@@ -20,74 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9473896-dfce-4f57-80be-9dee82e2aab5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PoolingSystem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PoolingSystem.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Characters@Breathing Idle (1).fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Characters@Breathing Idle (1).fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Characters@Idle (2).fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Characters@Idle (2).fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Characters@Moonwalk.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Characters@Moonwalk.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Characters@Running (2).fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Characters@Running (2).fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Characters@Running (3).fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Characters@Running (3).fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Characters@Running Backward (1).fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Characters@Running Backward (1).fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Characters@Walking (1).fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Characters@Walking (1).fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Characters@Walking Backwards (1).fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Characters@Walking Backwards (1).fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/acknowledging.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/acknowledging.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/angry gesture.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/angry gesture.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/annoyed head shake.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/annoyed head shake.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/being cocky.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/being cocky.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/dismissing gesture.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/dismissing gesture.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/happy hand gesture.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/happy hand gesture.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/hard head nod.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/hard head nod.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/head nod yes.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/head nod yes.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/lengthy head nod.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/lengthy head nod.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/look away gesture.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/look away gesture.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/relieved sigh.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/relieved sigh.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/sarcastic head nod.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/sarcastic head nod.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/shaking head no.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/shaking head no.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/thoughtful head shake.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/thoughtful head shake.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/weight shift.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Gestures/weight shift.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animators/Runner 1.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animators/Runner 1.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animators/Runner.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arts/Animators/Runner.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animators/Runner.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arts/Animators/Runner.controller.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Characters@Backward Left Turn.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Characters@Backward Left Turn.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Characters@Backward Right Turn.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Characters@Backward Right Turn.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Characters@Running Left Turn.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Characters@Running Left Turn.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Characters@Running Right Turn.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Characters@Running Right Turn.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Physic Material.physicMaterial" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Physic Material.physicMaterial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgAvancadaParaJogosTrabalho1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgAvancadaParaJogosTrabalho1/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgAvancadaParaJogosTrabalho1/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgAvancadaParaJogosTrabalho1/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgAvancadaParaJogosTrabalho1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgAvancadaParaJogosTrabalho1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Materials/FloorParticle.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arts/Materials/FloorParticle.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/PolygonPrototype/Materials/WetFloorLetters.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arts/PolygonPrototype/Materials/WetFloorLetters.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MudMaterial.physicMaterial" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MudMaterial.physicMaterial" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FloorParticleSystem.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FloorParticleSystem.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Floors/Dirt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Floors/Dirt.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Floors/Grass5x5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Floors/Grass5x5.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Floors/Mud.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Floors/Mud.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Floors/Road5x5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Floors/Road5x5.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Floors/WetFloor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Floors/WetFloor.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Track.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Track.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RunnerAnimatorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RunnerAnimatorController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,12 +57,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/RunnerAnimatorController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ChooseRandomIdleAnimation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PoolingSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FloorParticleEmiter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Runner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RunnerAnimatorController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" />
       </list>
     </option>
   </component>
@@ -162,7 +115,8 @@
       <updated>1599956848421</updated>
       <workItem from="1599956880782" duration="8016000" />
       <workItem from="1599972909483" duration="1187000" />
-      <workItem from="1600022339812" duration="7857000" />
+      <workItem from="1600022339812" duration="8558000" />
+      <workItem from="1600109586826" duration="13991000" />
     </task>
     <servers />
   </component>

@@ -26,7 +26,6 @@ public class RunnerAnimatorController : MonoBehaviour
     {
         SetSpeeds();
         SetAlternateIdle();
-        Debug.Log(_timer);
     }
 
     private void SetAlternateIdle()
