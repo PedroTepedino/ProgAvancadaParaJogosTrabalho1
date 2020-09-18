@@ -23,23 +23,21 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgAvancadaParaJogosTrabalho1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgAvancadaParaJogosTrabalho1/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgAvancadaParaJogosTrabalho1/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgAvancadaParaJogosTrabalho1/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgAvancadaParaJogosTrabalho1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgAvancadaParaJogosTrabalho1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/Materials/FloorParticle.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arts/Materials/FloorParticle.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/PolygonPrototype/Materials/WetFloorLetters.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arts/PolygonPrototype/Materials/WetFloorLetters.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MudMaterial.physicMaterial" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MudMaterial.physicMaterial" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FloorParticleSystem.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FloorParticleSystem.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Floors/Dirt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Floors/Dirt.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Floors/Grass5x5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Floors/Grass5x5.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Floors/Mud.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Floors/Mud.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Floors/Road5x5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Floors/Road5x5.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Floors/WetFloor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Floors/WetFloor.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RoadParticles.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RoadParticles.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Track.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Track.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RunnerAnimatorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RunnerAnimatorController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FloorParticleEmiter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FloorParticleEmiter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,11 +57,16 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/ChooseRandomIdleAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PoolingSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FloorParticleEmiter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Runner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RunnerAnimatorController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Runner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FloorParticleEmiter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tweens/GrowToNormalSize.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tweens/CameraFade.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tweens/UpAndDown.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tweens/RotateAround.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PickUpBoxes.cs" />
       </list>
     </option>
   </component>
@@ -83,6 +86,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -117,6 +121,9 @@
       <workItem from="1599972909483" duration="1187000" />
       <workItem from="1600022339812" duration="8558000" />
       <workItem from="1600109586826" duration="13991000" />
+      <workItem from="1600190836648" duration="6832000" />
+      <workItem from="1600294696369" duration="1493000" />
+      <workItem from="1600360737068" duration="10393000" />
     </task>
     <servers />
   </component>
@@ -141,6 +148,14 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1026" y="244" key="RiderGenerateDialog" timestamp="1600394661821">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1026" y="244" key="RiderGenerateDialog/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1600394661821" />
+    <state x="781" y="165" key="SettingsEditor" timestamp="1600361085913">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="781" y="165" key="SettingsEditor/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1600361085913" />
     <state x="936" y="240" key="run.anything.popup" timestamp="1599960891641">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

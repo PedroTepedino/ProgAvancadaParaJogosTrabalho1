@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 1209285757483753359}
   m_Layer: 0
   m_Name: Mud
-  m_TagString: Untagged
+  m_TagString: Mud
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

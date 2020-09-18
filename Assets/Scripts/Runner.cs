@@ -41,6 +41,8 @@ public class Runner : MonoBehaviour
     private void Update()
     {
         PlayerInput.Instance.Tick();
+        
+        Debug.Log(_rigidbody.velocity.magnitude);
     }
 
     private void FixedUpdate()

@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5282803292150368535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5282803292150368533}
+  - component: {fileID: 5282803292150368532}
+  m_Layer: 0
+  m_Name: PoolingSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5282803292150368533
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5282803292150368535}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5282803292150368532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5282803292150368535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad5ede5bba646a4a352daf3a514f745, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pools:
+  - prefab: {fileID: 1864616885464043146, guid: 1c140ea39c5adde4fa202cff08667a09,
+      type: 3}
+    tag: RoadParticle
+    size: 0
+  - prefab: {fileID: 6958472499653051511, guid: da945fd725e628a4cba131a8085f3a26,
+      type: 3}
+    tag: DirtParticle
+    size: 0
+  - prefab: {fileID: 7140030816347894669, guid: 5827127000a573d43a6b06718764cf54,
+      type: 3}
+    tag: GrassParticle
+    size: 0
+  - prefab: {fileID: 2678846709634898628, guid: 15adf0e83222d334f876a2448baec690,
+      type: 3}
+    tag: WetFloorParticle
+    size: 0
+  - prefab: {fileID: 6749917605016599974, guid: 8bef2211fbf5cc54f8a9eb65d13a385d,
+      type: 3}
+    tag: MudParticle
+    size: 0

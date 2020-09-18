@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8466880651856509997}
   m_Layer: 0
   m_Name: Road5x5
-  m_TagString: Untagged
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -187,6 +187,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2a258499b3ae38c40b980760778fdfe7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 2a258499b3ae38c40b980760778fdfe7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -257,6 +261,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: db31839fe3e5fb94aa9c207101f25669, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: db31839fe3e5fb94aa9c207101f25669, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: db31839fe3e5fb94aa9c207101f25669, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -329,6 +337,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 331643f7686713e4ab834ffe96ab31a5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 331643f7686713e4ab834ffe96ab31a5, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -399,6 +411,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: ae5f85799249ce94f84c791edb760e82, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ae5f85799249ce94f84c791edb760e82, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: ae5f85799249ce94f84c791edb760e82, type: 3}
       propertyPath: m_Materials.Array.data[0]
