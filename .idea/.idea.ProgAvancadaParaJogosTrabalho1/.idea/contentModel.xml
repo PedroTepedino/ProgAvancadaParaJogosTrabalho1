@@ -57,16 +57,25 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="BoostPArticlesActivator.cs" t="Include" />
           <e p="Bootstrapper.cs" t="Include" />
+          <e p="BowlingBallGameObject.cs" t="Include" />
           <e p="CameraFollow.cs" t="Include" />
           <e p="ChooseRandomIdleAnimation.cs" t="Include" />
           <e p="FloorParticleEmiter.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
+          <e p="IPickable.cs" t="Include" />
+          <e p="IUsable.cs" t="Include" />
           <e p="PickUpBoxes.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="PlayerInput.cs" t="Include" />
+          <e p="PlayerUi.cs" t="Include" />
           <e p="PoolingSystem.cs" t="Include" />
+          <e p="PowerUp.cs" t="Include" />
           <e p="Runner.cs" t="Include" />
           <e p="RunnerAnimatorController.cs" t="Include" />
+          <e p="RunnerPowerUpManager.cs" t="Include" />
+          <e p="StunBoxGameObject.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">

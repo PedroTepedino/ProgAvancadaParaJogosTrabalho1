@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections;
-using System.Runtime.CompilerServices;
+using System.Reflection;
 using DG.Tweening;
-using TMPro;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(Collider))]
-public class PickUpBoxes : MonoBehaviour
+public class PickUpBoxes : MonoBehaviour, IPickable
 {
     private Tween _tween;
     private Collider _collider;
@@ -17,6 +17,8 @@ public class PickUpBoxes : MonoBehaviour
     [SerializeField] private float _spawnTime = 10f;
 
     private WaitForSeconds _waitSeconds;
+
+    private Type[] _powerUpTypes = new[] {typeof(BowlingBall), typeof(SwiftnessPotion), typeof(StunBox)};
 
     private void Awake()
     {
@@ -29,9 +31,16 @@ public class PickUpBoxes : MonoBehaviour
         _tween = _modelTransform.DOScale(1f, _tweenTime)
             .SetAutoKill(false)
             .From(0f)
-            .SetEase(Ease.OutQuad)
+            .SetEase(Ease.OutBack)
             .OnComplete(() => _collider.enabled = true)
             .OnRewind(() => StartCoroutine(SpawnTimer()));
+    }
+
+    public void PickUp()
+    {
+        _collider.enabled = false;
+        _tween.timeScale = 3f;
+        _tween.SmoothRewind();
     }
 
     private IEnumerator SpawnTimer()
@@ -42,11 +51,22 @@ public class PickUpBoxes : MonoBehaviour
         _tween.Restart();
     }
 
-    private void OnTriggerEnter(Collider other)
+    public PowerUp PickUpPower(RunnerPowerUpManager picker)
     {
-        _collider.enabled = false;
-        _tween.timeScale = 3f;
-        _tween.SmoothRewind();
+        return SudoFactory(picker, _powerUpTypes[Random.Range(0, _powerUpTypes.Length)]);
+    }
+
+    private PowerUp SudoFactory(RunnerPowerUpManager picker, Type powerUpType)
+    {
+        if (powerUpType == typeof(PowerUp)) return null;
+        
+        Type[] constructorParameters = {typeof(RunnerPowerUpManager)};
+        ConstructorInfo constructorInfo = powerUpType.GetConstructor(constructorParameters);
+
+        if (constructorInfo != null)
+            return constructorInfo.Invoke(new object[] {picker}) as PowerUp;
+        
+        return null;
     }
 
     private void OnValidate()

@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 102926652841006805}
   m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Runner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,6 +119,8 @@ MonoBehaviour:
   _acceleration: 20
   _maxRunSpeed: 10
   _maxWalkSpeed: 3
+  _stunTime: 3
+  _stunParticles: {fileID: 0}
 --- !u!33 &102926652841006801
 MeshFilter:
   m_ObjectHideFlags: 0

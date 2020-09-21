@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c48690a71a636c24fa024cd965d9ff9f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _image: {instanceID: 0}
+  - _bowlingBallSprite: {fileID: 21300000, guid: fa32d05465cf9694ca67e958dc832e00,
+      type: 3}
+  - _swiftPotionSprite: {fileID: 21300000, guid: 01cd515a54d90884495dfc6c93f9922d,
+      type: 3}
+  - _stunBoxSprite: {fileID: 21300000, guid: cd509947d01abef438b95d69ad71d158, type: 3}
+  - _defaultSprite: {fileID: 21300000, guid: d4974edd775a3a54fb08604e1ff6e610, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

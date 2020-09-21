@@ -8,5 +8,7 @@ public class Bootstrapper
         var playerInputGameObject = new GameObject("[PLAYER INPUT]");
         playerInputGameObject.AddComponent<PlayerInput>();
         Object.DontDestroyOnLoad(playerInputGameObject);
+
+        GameManager.Instance.InitializeGame();
     }
 }

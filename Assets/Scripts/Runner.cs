@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Runner : MonoBehaviour
@@ -9,6 +10,11 @@ public class Runner : MonoBehaviour
     [SerializeField] private float _acceleration = 2;
     [SerializeField] private float _maxRunSpeed = 10;
     [SerializeField] private float _maxWalkSpeed = 3;
+    [SerializeField] private float _stunTime = 3f;
+    [SerializeField] private ParticleSystem _stunParticles;
+
+    private bool _stunned = false;
+    private ParticleSystem.Particle[] _currentStunParticlesAlive = new ParticleSystem.Particle[20];
 
     private Rigidbody _rigidbody;
 
@@ -18,6 +24,7 @@ public class Runner : MonoBehaviour
 
     public float Acceleration => _acceleration;
     public float RotationSpeed => _rotationSpeed;
+    public float MAXRunSpeed => _maxRunSpeed;
 
     private void Awake()
     {
@@ -30,6 +37,7 @@ public class Runner : MonoBehaviour
 
     private void OnEnable()
     {
+        _stunned = false; 
         PlayerInput.Instance.OnWalking += ListenOnWalk;
     }
 
@@ -41,18 +49,44 @@ public class Runner : MonoBehaviour
     private void Update()
     {
         PlayerInput.Instance.Tick();
-        
-        Debug.Log(_rigidbody.velocity.magnitude);
     }
 
     private void FixedUpdate()
     {
+        if (_stunned) return;
+
         _mover.Tick();
     }
 
     private void ListenOnWalk(bool walking)
     {
         _mover = walking ? _walker : _runner;
+    }
+
+    public void Stun()
+    {
+        _stunned = true;
+        _stunParticles.Play();
+
+        StartCoroutine(StopSunParticles());
+    }
+
+    private IEnumerator StopSunParticles()
+    {
+         yield return new WaitForSeconds(_stunTime);
+
+
+         // var numberOfParticlesAlive = _stunParticles.GetParticles(_currentStunParticlesAlive);
+         //
+         // for (var index = 0; index < numberOfParticlesAlive; index++)
+         // {
+         //     var particle = _currentStunParticlesAlive[index];
+         //     particle.remainingLifetime = 0.1f;
+         // }
+         // _stunParticles.SetParticles(_currentStunParticlesAlive, numberOfParticlesAlive);
+         _stunParticles.Stop();
+         _currentStunParticlesAlive = new ParticleSystem.Particle[20];
+         _stunned = false;
     }
 }
 

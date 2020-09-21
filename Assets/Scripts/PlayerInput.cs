@@ -1,6 +1,5 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.Experimental.TerrainAPI;
 
 public class PlayerInput : MonoBehaviour
 {
@@ -31,9 +30,9 @@ public class PlayerInput : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance != null) Destroy(this);
+        if (Instance != null) Destroy(this.gameObject);
+        else Instance = this;
         
-        Instance = this;
         DontDestroyOnLoad(this);
     }
 

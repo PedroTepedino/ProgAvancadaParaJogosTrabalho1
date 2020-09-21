@@ -9,6 +9,8 @@ TagManager:
   - Mud
   - Grass
   - Road
+  - Runner
+  - PickUpBox
   layers:
   - Default
   - TransparentFX
@@ -21,7 +23,7 @@ TagManager:
   - Runners
   - RunnersFeetParticles
   - PostProcessing
-  - 
+  - RunnersOnlyInteractables
   - 
   - 
   - 

@@ -50,8 +50,10 @@ public class CameraFollow : MonoBehaviour
 
     private void FixedUpdate()
     {
+        var viewAngle = Vector3.Angle(this.transform.forward, _realLookDirectionVector);
+
         this.transform.rotation = Quaternion.RotateTowards(this.transform.rotation, _realRotationToLookAt,
-            _lookSpeed * Time.fixedDeltaTime * Vector3.Angle(this.transform.forward, _realLookDirectionVector));
+            _lookSpeed * Time.fixedDeltaTime * viewAngle);
         this.transform.position = Vector3.Lerp(this.transform.position, _realFollowPosition, _speed * Time.fixedDeltaTime);
     }
 
