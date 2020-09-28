@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d40cd09bba76134280a5efea8b0db98, type: 3}
-  m_Name: Road
+  m_Name: FinishLine
   m_EditorClassIdentifier: 
-  _trackPrefab: {fileID: 848369483654259877, guid: f5256668ec4923b40a66674fb10a8c1e,
+  _trackPrefab: {fileID: 9201758806036831771, guid: c855564b4b289df41a21ee99af295742,
     type: 3}
-  _color: {r: 1, g: 0, b: 0, a: 1}
+  _color: {r: 0, g: 1, b: 1, a: 1}

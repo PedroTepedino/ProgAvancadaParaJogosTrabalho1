@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d40cd09bba76134280a5efea8b0db98, type: 3}
-  m_Name: Road
+  m_Name: WetFloor
   m_EditorClassIdentifier: 
-  _trackPrefab: {fileID: 848369483654259877, guid: f5256668ec4923b40a66674fb10a8c1e,
+  _trackPrefab: {fileID: 606587795839950583, guid: 44ab5315423282d458aaeb77e2c871e5,
     type: 3}
-  _color: {r: 1, g: 0, b: 0, a: 1}
+  _color: {r: 0, g: 0, b: 1, a: 1}
