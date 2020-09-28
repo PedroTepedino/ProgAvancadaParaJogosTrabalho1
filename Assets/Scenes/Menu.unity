@@ -366,7 +366,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 12.124001}
   m_AnchorMin: {x: 0.67163855, y: 0.4}
   m_AnchorMax: {x: 0.9667591, y: 0.55}
-  m_AnchoredPosition: {x: -20.69603, y: 73.850655}
+  m_AnchoredPosition: {x: -20.696045, y: 73.850655}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 1.5670357, y: 1.4812462}
 --- !u!114 &1147544545
@@ -416,7 +416,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34.85
+  m_fontSize: 26.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -656,7 +656,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 125.2
+  m_fontSize: 89.5
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1165,7 +1165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2665838472e4c2686bfe7bfc7cb6d0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelToLoad: Track
+  LevelToLoad: GamePlay
 --- !u!1 &1961149165 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4895638039877480261, guid: e9903f532569ce54ba122bb56a9cbaac,
