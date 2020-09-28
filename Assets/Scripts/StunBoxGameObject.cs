@@ -44,7 +44,7 @@ public class StunBoxGameObject : MonoBehaviour, IPickable
     {
         PickUp();
         
-        var runner = other.GetComponent<Runner>();
+        var runner = other.GetComponent<Player>();
         if (runner)
         {
             _pickUpParticleSystem.DORestart();

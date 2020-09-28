@@ -22,10 +22,15 @@ public class PoolingSystem : MonoBehaviour
 
      private void Awake()
      {
-          if (Instance != null) Destroy(this);
-        
-          Instance = this;
-          DontDestroyOnLoad(this);
+         if (Instance != null)
+         {
+             Destroy(this.gameObject);
+         }
+         else
+         { 
+             Instance = this; 
+             DontDestroyOnLoad(this);
+         }
      }
 
      private void Start()
@@ -51,13 +56,14 @@ public class PoolingSystem : MonoBehaviour
          }
      }
 
-     public GameObject Spawn(string objectTag, Vector3 worldPosition)
+     public GameObject Spawn(string objectTag, Vector3 worldPosition, Quaternion rotation)
      {
          if (!_poolDictionary.ContainsKey(objectTag)) return null;
 
          GameObject objectToSpawn = GetNextObjectInPool(objectTag);
 
          objectToSpawn.transform.position = worldPosition;
+         objectToSpawn.transform.rotation = rotation;
          objectToSpawn.SetActive(true);
          
          // Puts the selected object on the end os the queue

@@ -9,6 +9,8 @@ public class Bootstrapper
         playerInputGameObject.AddComponent<PlayerInput>();
         Object.DontDestroyOnLoad(playerInputGameObject);
 
-        GameManager.Instance.InitializeGame();
+        FadeInOutSceneTransition.LoadFadeScene();
+        
+        GameManager.InitializeGameManager();
     }
 }

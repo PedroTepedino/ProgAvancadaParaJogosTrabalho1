@@ -70,6 +70,7 @@ GameObject:
   m_Component:
   - component: {fileID: 102926652841006802}
   - component: {fileID: 102926652841006804}
+  - component: {fileID: 3856742493202734429}
   - component: {fileID: 102926652841006801}
   - component: {fileID: 102926652841006800}
   - component: {fileID: 102926652841006815}
@@ -121,6 +122,21 @@ MonoBehaviour:
   _maxWalkSpeed: 3
   _stunTime: 3
   _stunParticles: {fileID: 0}
+  _layermasks:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &3856742493202734429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102926652841006814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617f2d35d272cf14abbbe0ea4f8040f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &102926652841006801
 MeshFilter:
   m_ObjectHideFlags: 0

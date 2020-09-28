@@ -64,3 +64,11 @@ MonoBehaviour:
       type: 3}
     tag: MudParticle
     size: 0
+  - prefab: {fileID: 3211872872207691272, guid: 16879511419198842848d96348e1bb54,
+      type: 3}
+    tag: BowlingBall
+    size: 0
+  - prefab: {fileID: 8767948460157304198, guid: c035e17e0b4876842860ba4483c49cbb,
+      type: 3}
+    tag: StunCrate
+    size: 0

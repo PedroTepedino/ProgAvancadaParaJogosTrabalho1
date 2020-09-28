@@ -16,7 +16,7 @@ GameObject:
   m_Name: WetFloor
   m_TagString: WetFloor
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 5
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &606587795840369367
@@ -107,7 +107,7 @@ GameObject:
   m_Name: Letters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 5
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4741055450763243792
@@ -147,6 +147,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 7b3b4ab8d7928744ab2e2de6c2f74437, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7b3b4ab8d7928744ab2e2de6c2f74437, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7b3b4ab8d7928744ab2e2de6c2f74437, type: 3}
       propertyPath: m_LocalPosition.x
@@ -219,6 +223,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 331643f7686713e4ab834ffe96ab31a5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 331643f7686713e4ab834ffe96ab31a5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.41
@@ -289,6 +297,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 63cb43ab8fe058f428fcd4226087a692, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 63cb43ab8fe058f428fcd4226087a692, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 63cb43ab8fe058f428fcd4226087a692, type: 3}
       propertyPath: m_LocalPosition.x
@@ -361,6 +373,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 17e7e8411c7ed534abbaec321035966a, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 17e7e8411c7ed534abbaec321035966a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.18
@@ -431,6 +447,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: cfc84fd48a7ef204a8f31f2178a904e2, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: cfc84fd48a7ef204a8f31f2178a904e2, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cfc84fd48a7ef204a8f31f2178a904e2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -503,6 +523,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 331643f7686713e4ab834ffe96ab31a5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 331643f7686713e4ab834ffe96ab31a5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.81
@@ -573,6 +597,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 179633ae31af95b469d9db216bdbda2c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 179633ae31af95b469d9db216bdbda2c, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 179633ae31af95b469d9db216bdbda2c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -645,6 +673,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4d5bf05349fa8854198809b7abf9a9bb, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4d5bf05349fa8854198809b7abf9a9bb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.5
@@ -715,6 +747,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 2a258499b3ae38c40b980760778fdfe7, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2a258499b3ae38c40b980760778fdfe7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2a258499b3ae38c40b980760778fdfe7, type: 3}
       propertyPath: m_LocalPosition.x

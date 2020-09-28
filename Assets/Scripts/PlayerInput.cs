@@ -13,6 +13,10 @@ public class PlayerInput : MonoBehaviour
 
     public float ForwardCam => Input.GetAxis("MouseScrollWheel");
 
+    public bool PowerUp => Input.GetButtonDown("PowerUp");
+
+    public bool Pause => Input.GetButtonDown("Pause");
+
     public int Acceleration
     {
         get

@@ -24,12 +24,6 @@ public class CameraFollow : MonoBehaviour
     
     private Vector3 _realFollowPosition => 
         Vector3.Lerp(_followTarget.position, _nearFollowTarget.position, _zoomInterpolation);
-        
-
-    private void Awake()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-    }
 
     private void Update()
     {

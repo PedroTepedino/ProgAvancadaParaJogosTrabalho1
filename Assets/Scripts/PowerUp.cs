@@ -32,7 +32,8 @@ public class BowlingBall : PowerUp
 
     public override void Use()
     {
-        // TODO: launch bowling ball
+        var transform = _owner.transform;
+        PoolingSystem.Instance.Spawn("BowlingBall", (transform.position + transform.forward + transform.up),transform.rotation);
     }
 }
 
@@ -40,10 +41,14 @@ public class StunBox : PowerUp
 {
     public StunBox(RunnerPowerUpManager powerUpManager) : base(powerUpManager)
     {
+        
     }
 
     public override void Use()
     {
-        // TODO: Drop Stun Box
+        var transform = _owner.transform;
+        var obj = PoolingSystem.Instance.Spawn("StunCrate", (transform.position - (transform.forward * 1.7f) + transform.up), Quaternion.identity);
+        obj.SetActive(true);
     }
 }
+

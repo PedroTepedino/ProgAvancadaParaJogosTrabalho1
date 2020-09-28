@@ -16,7 +16,7 @@ GameObject:
   m_Name: Road5x5
   m_TagString: Road
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 7
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &848369483653970053
@@ -107,7 +107,7 @@ GameObject:
   m_Name: Road
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 7
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7623120796710445363
@@ -142,6 +142,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 2a258499b3ae38c40b980760778fdfe7, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2a258499b3ae38c40b980760778fdfe7, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2a258499b3ae38c40b980760778fdfe7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -218,6 +222,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: db31839fe3e5fb94aa9c207101f25669, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: db31839fe3e5fb94aa9c207101f25669, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.315
@@ -293,6 +301,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 331643f7686713e4ab834ffe96ab31a5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 331643f7686713e4ab834ffe96ab31a5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.715
@@ -367,6 +379,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: ae5f85799249ce94f84c791edb760e82, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ae5f85799249ce94f84c791edb760e82, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ae5f85799249ce94f84c791edb760e82, type: 3}
       propertyPath: m_LocalPosition.x

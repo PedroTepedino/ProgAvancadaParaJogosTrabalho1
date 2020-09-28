@@ -1,6 +1,4 @@
-﻿using System;
-using UnityEngine;
-using UnityEngine.iOS;
+﻿using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class RunnerAnimatorController : MonoBehaviour

@@ -1,6 +1,7 @@
-﻿using System;
+﻿using System.Diagnostics;
 using DG.Tweening;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 [RequireComponent(typeof(Collider))]
 public class BowlingBallGameObject : MonoBehaviour
@@ -43,7 +44,8 @@ public class BowlingBallGameObject : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Runner"))
         {
-            other.gameObject.GetComponent<Runner>().Stun();
+            other.gameObject.GetComponent<AbstractRunner>().ApplyForce(this._forceDirection);
+            other.gameObject.GetComponent<AbstractRunner>().Stun();
             _spawnTween.SmoothRewind();
         }
     }

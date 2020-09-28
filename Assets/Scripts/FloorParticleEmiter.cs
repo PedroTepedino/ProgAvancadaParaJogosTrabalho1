@@ -25,6 +25,6 @@ public class FloorParticleEmiter : MonoBehaviour
             particleToSpawn = "WetFloorParticle";
         }
 
-        PoolingSystem.Instance.Spawn(particleToSpawn, this.transform.position);
+        PoolingSystem.Instance.Spawn(particleToSpawn, this.transform.position, Quaternion.identity);
     }
 }

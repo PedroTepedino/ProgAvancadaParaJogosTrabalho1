@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using DG.Tweening;
-using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -36,12 +35,13 @@ public class PlayerUi : MonoBehaviour
 
     private void OnEnable()
     {
-        FindObjectOfType<RunnerPowerUpManager>().OnPowerUpChanged += OpenCloseUi;
+        PlayerInstanceReference.Instance.PowerUpManager.OnPowerUpChanged += OpenCloseUi;
     }
 
     private void OnDisable()
     {
-        FindObjectOfType<RunnerPowerUpManager>().OnPowerUpChanged -= OpenCloseUi;
+        if (PlayerInstanceReference.Instance != null)
+            PlayerInstanceReference.Instance.PowerUpManager.OnPowerUpChanged -= OpenCloseUi;
     }
 
     private void OpenCloseUi(PowerUp powerUp)

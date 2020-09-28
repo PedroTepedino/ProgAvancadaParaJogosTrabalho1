@@ -6,11 +6,11 @@ public class BoostParticlesActivator : MonoBehaviour
 {
     [SerializeField] private ParticleSystem _boostParticleSystem;
     [SerializeField] private Rigidbody _rigidbody;
-    [SerializeField] private Runner _runner;
+    [SerializeField] private Player _player;
 
     private void Update()
     {
-        if (_rigidbody.GroundVelocity().magnitude > _runner.MAXRunSpeed)
+        if (_rigidbody.GroundVelocity().magnitude > _player.MAXRunSpeed)
         {
             if (_boostParticleSystem.isStopped)
                 _boostParticleSystem.Play();
@@ -34,9 +34,9 @@ public class BoostParticlesActivator : MonoBehaviour
             _rigidbody = this.GetComponentInParent<Rigidbody>();
         }
 
-        if (_runner == null)
+        if (_player == null)
         {
-            _runner = this.GetComponentInParent<Runner>();
+            _player = this.GetComponentInParent<Player>();
         }
     }
 }
