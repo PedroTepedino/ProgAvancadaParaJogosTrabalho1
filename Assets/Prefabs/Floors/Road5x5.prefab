@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 848369483651070117}
   - component: {fileID: 848369483652069989}
   - component: {fileID: 8466880651856509997}
+  - component: {fileID: 7423033205073182106}
   m_Layer: 0
   m_Name: Road5x5
   m_TagString: Road
@@ -94,6 +95,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 0.099999994, z: 4.999984}
   m_Center: {x: 2.5, y: -0.049999997, z: 2.499992}
+--- !u!114 &7423033205073182106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848369483654259877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d02f3b0015094f189fddca8bf30909ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentDirection: 0
+  _letters: {fileID: 6065053481941233653}
 --- !u!1 &6065053481941233653
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,7 +132,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6065053481941233653}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0.7071068, w: 0}
+  m_LocalRotation: {x: 0.000000030908623, y: 0.7071068, z: 0.7071068, w: -0.000000030908623}
   m_LocalPosition: {x: 2.5, y: 0, z: 2.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

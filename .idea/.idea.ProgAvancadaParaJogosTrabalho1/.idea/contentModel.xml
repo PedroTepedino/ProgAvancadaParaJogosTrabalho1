@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\Pedro\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Pedro\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_ProgAvancadaParaJogosTrabalho1.2141651573.00" t="ExcludeRecursive" />
-    <e p="D:\Repos\ProgAvancadaParaJogosTrabalho1" t="IncludeRecursive">
+    <e p="C:\Users\Pedro\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_ProgAvancadaParaJogosTrabalho1.896627490.00" t="ExcludeRecursive" />
+    <e p="D:\Repos\ProgAvancadaTrabalho1\ProgAvancadaParaJogosTrabalho1" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
@@ -63,56 +63,84 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="AbstractMenuButton.cs" t="Include" />
-          <e p="AbstractMenuPanel.cs" t="Include" />
-          <e p="AbstractRunner.cs" t="Include" />
-          <e p="Ai.cs" t="Include" />
+          <e p="Ai" t="Include">
+            <e p="Idle.cs" t="Include" />
+            <e p="Lose.cs" t="Include" />
+            <e p="Running.cs" t="Include" />
+            <e p="Stunned.cs" t="Include" />
+            <e p="Win.cs" t="Include" />
+          </e>
           <e p="AirTunnel.cs" t="Include" />
-          <e p="BoostPArticlesActivator.cs" t="Include" />
-          <e p="Bootstrapper.cs" t="Include" />
-          <e p="BowlingBallGameObject.cs" t="Include" />
-          <e p="CameraFollow.cs" t="Include" />
-          <e p="ChooseRandomIdleAnimation.cs" t="Include" />
-          <e p="CountDownPanel.cs" t="Include" />
-          <e p="CountDownState.cs" t="Include" />
-          <e p="CountDownText.cs" t="Include" />
           <e p="Editor" t="Include">
             <e p="TrackBuilder.cs" t="Include" />
             <e p="TrackTypeColors.cs" t="Include" />
           </e>
-          <e p="ExitButton.cs" t="Include" />
-          <e p="ExitState.cs" t="Include" />
-          <e p="FadeInOutSceneTransition.cs" t="Include" />
-          <e p="FinishRace.cs" t="Include" />
-          <e p="FloorCharacteristics.cs" t="Include" />
-          <e p="FloorParticleEmiter.cs" t="Include" />
+          <e p="Floor" t="Include">
+            <e p="FloorCharacteristics.cs" t="Include" />
+            <e p="FloorParticleEmiter.cs" t="Include" />
+            <e p="RotateFloorLetters.cs" t="Include" />
+          </e>
           <e p="GameManager.cs" t="Include" />
-          <e p="IPickable.cs" t="Include" />
-          <e p="IState.cs" t="Include" />
-          <e p="IUsable.cs" t="Include" />
-          <e p="LoadLevelState.cs" t="Include" />
-          <e p="MenuButton.cs" t="Include" />
-          <e p="MenuState.cs" t="Include" />
-          <e p="PauseButton.cs" t="Include" />
-          <e p="PausePanel.cs" t="Include" />
-          <e p="PauseState.cs" t="Include" />
-          <e p="PickUpBoxes.cs" t="Include" />
-          <e p="PlayButton.cs" t="Include" />
-          <e p="Player.cs" t="Include" />
-          <e p="PlayerInput.cs" t="Include" />
-          <e p="PlayerInstanceReference.cs" t="Include" />
-          <e p="PlayerUi.cs" t="Include" />
-          <e p="PlayState.cs" t="Include" />
+          <e p="NavmeshAgentExtensions.cs" t="Include" />
+          <e p="Player" t="Include">
+            <e p="CameraFollow.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+            <e p="PlayerAnimatorController.cs" t="Include" />
+            <e p="PlayerInput.cs" t="Include" />
+            <e p="PlayerInstanceReference.cs" t="Include" />
+          </e>
           <e p="PoolingSystem.cs" t="Include" />
-          <e p="PowerUp.cs" t="Include" />
-          <e p="RestartButton.cs" t="Include" />
+          <e p="PowerUps" t="Include">
+            <e p="BowlingBallGameObject.cs" t="Include" />
+            <e p="IPickable.cs" t="Include" />
+            <e p="IUsable.cs" t="Include" />
+            <e p="PickUpBoxes.cs" t="Include" />
+            <e p="PowerUp.cs" t="Include" />
+            <e p="StunBoxGameObject.cs" t="Include" />
+          </e>
           <e p="RigidBodyExtensions.cs" t="Include" />
-          <e p="RunnerAnimatorController.cs" t="Include" />
-          <e p="RunnerPowerUpManager.cs" t="Include" />
-          <e p="StateMachine.cs" t="Include" />
-          <e p="StateTransition.cs" t="Include" />
-          <e p="StunBoxGameObject.cs" t="Include" />
-          <e p="UiScaleTween.cs" t="Include" />
+          <e p="Runners" t="Include">
+            <e p="AbstractRunner.cs" t="Include" />
+            <e p="Ai.cs" t="Include" />
+            <e p="AiAnimationAnimatorController.cs" t="Include" />
+            <e p="BoostPArticlesActivator.cs" t="Include" />
+            <e p="ChooseRandomIdleAnimation.cs" t="Include" />
+            <e p="FieldOfView.cs" t="Include" />
+            <e p="RunnerPowerUpManager.cs" t="Include" />
+          </e>
+          <e p="Setup" t="Include">
+            <e p="Bootstrapper.cs" t="Include" />
+          </e>
+          <e p="StateMachine" t="Include">
+            <e p="CountDownState.cs" t="Include" />
+            <e p="ExitState.cs" t="Include" />
+            <e p="FinishRace.cs" t="Include" />
+            <e p="IState.cs" t="Include" />
+            <e p="LoadLevelState.cs" t="Include" />
+            <e p="MenuState.cs" t="Include" />
+            <e p="PauseState.cs" t="Include" />
+            <e p="PlayState.cs" t="Include" />
+            <e p="StateMachine.cs" t="Include" />
+            <e p="StateTransition.cs" t="Include" />
+          </e>
+          <e p="Ui" t="Include">
+            <e p="AbstractMenuButton.cs" t="Include" />
+            <e p="AbstractMenuPanel.cs" t="Include" />
+            <e p="CountDownPanel.cs" t="Include" />
+            <e p="CountDownText.cs" t="Include" />
+            <e p="ExitButton.cs" t="Include" />
+            <e p="FadeInOutSceneTransition.cs" t="Include" />
+            <e p="FinishPanel.cs" t="Include" />
+            <e p="MenuButton.cs" t="Include" />
+            <e p="PauseButton.cs" t="Include" />
+            <e p="PausePanel.cs" t="Include" />
+            <e p="PlayButton.cs" t="Include" />
+            <e p="PlayerUi.cs" t="Include" />
+            <e p="RestartButton.cs" t="Include" />
+            <e p="RestartCountDown.cs" t="Include" />
+            <e p="UiScaleTween.cs" t="Include" />
+            <e p="UpdatePositionsText.cs" t="Include" />
+          </e>
           <e p="Waypoint.cs" t="Include" />
           <e p="Waypoints.cs" t="Include" />
         </e>

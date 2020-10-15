@@ -126,6 +126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _acceleration: 30
   _initialForce: 20
+  _hitsBeforeDespawn: 3
 --- !u!1 &8469383286348546628
 GameObject:
   m_ObjectHideFlags: 0

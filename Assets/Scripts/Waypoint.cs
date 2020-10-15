@@ -7,7 +7,11 @@ public class Waypoint : MonoBehaviour
     {
         if (other.CompareTag("Runner"))
         {
-            other.GetComponent<Ai>().ReachedWayPoint(this.transform);
+            AbstractRunner runner = other.GetComponent<AbstractRunner>();
+            if (runner != null)
+            {
+                runner.ReachedWayPoint(this.transform);
+            }
         }
     }
 }

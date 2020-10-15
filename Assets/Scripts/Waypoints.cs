@@ -1,10 +1,12 @@
-﻿using System;
+﻿using TMPro;
 using UnityEngine;
 
 public class Waypoints : MonoBehaviour
 {
     public static Waypoints Instance;
     [SerializeField] private Transform[] _waypoints;
+
+    public int WaypointsCount => _waypoints.Length;
 
     private void Awake()
     {
@@ -29,6 +31,7 @@ public class Waypoints : MonoBehaviour
     public int GetNextWayPoint(out Transform _transform, int currentWaypoint)
     {
         currentWaypoint++;
+        
         if (currentWaypoint >= _waypoints.Length)
         {
             currentWaypoint = 0;
@@ -37,4 +40,6 @@ public class Waypoints : MonoBehaviour
         _transform = _waypoints[currentWaypoint];
         return currentWaypoint;
     }
+
+    public Transform GetFinishLine() => _waypoints[_waypoints.Length - 1];
 }

@@ -11,6 +11,7 @@ TagManager:
   - Road
   - Runner
   - PickUpBox
+  - Wall
   layers:
   - Default
   - TransparentFX

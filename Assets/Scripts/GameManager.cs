@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
+using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 using UnityEngine.AI;
 using Debug = UnityEngine.Debug;
@@ -10,12 +11,24 @@ public class GameManager : MonoBehaviour
     private static GameManager _instance;
 
     private StateMachine _stateMachine;
+
     public Action<IState> OnGameStateChanged;
+    private AbstractRunner[] _runners;
+    private AbstractRunner[] _finalRunnersPositions;
+    private int _runnersThatFinished = 0;
+    public event Action<bool> OnHandleRunnerLockState;
+    public event Action OnResetRunnerStatus;
+
+    public AbstractRunner[] FinalRunnersPositions => _finalRunnersPositions.Where(runner => runner != null).ToArray();
+
+    public event Action OnResetRace;
 
     public bool RaceStarted { get; private set; }
     public bool RaceFinished { get; private set; }
 
-    public Dictionary<int, FloorCharacteristics> FloorTypes { get; private set; }  
+    public Dictionary<int, FloorCharacteristics> FloorTypes { get; private set; }
+
+    public bool HasPlayerWon => RaceFinished && (_finalRunnersPositions[0] is Player);
 
     public static GameManager Instance
     {
@@ -26,7 +39,7 @@ public class GameManager : MonoBehaviour
             return _instance;
         }  
     }
-
+    
     private void Awake()
     {
         CreateSingleTon();
@@ -39,16 +52,21 @@ public class GameManager : MonoBehaviour
     private void OnEnable()
     {
         _stateMachine.OnStateChanged += CallOnStateChange;
+        AbstractRunner.OnLap += ListenOnPlayerLap;
     }
 
     private void OnDisable()
     {
         _stateMachine.OnStateChanged -= CallOnStateChange;
+        AbstractRunner.OnLap -= ListenOnPlayerLap;
     }
 
     private void Update()
     {
         _stateMachine.Tick();
+        
+        if (RaceStarted)
+            CalculatePlayerPositions();
     }
 
     public static void InitializeGameManager()
@@ -76,9 +94,9 @@ public class GameManager : MonoBehaviour
          _stateMachine = new StateMachine();
          
          var menu = new MenuState();
-         var load = new LoadLevelState();
+         var load = new LoadLevelState(this);
          var countDown = new CountDownState(this);
-         var play = new PlayState();
+         var play = new PlayState(this);
          var pause = new PauseState();
          var finishRace = new FinishRace();
          var exit = new ExitState();
@@ -117,7 +135,7 @@ public class GameManager : MonoBehaviour
         
         foreach (var type in floorTypes)
         {
-            FloorTypes.Add(NavMesh.GetAreaFromName(type.FloorTag), type);
+            FloorTypes.Add(1 << NavMesh.GetAreaFromName(type.FloorTag), type);
         }
     }
 
@@ -130,10 +148,66 @@ public class GameManager : MonoBehaviour
     {
         RaceStarted = false;
         RaceFinished = false;
+        OnResetRace?.Invoke();
     }
 
     public void CountDownFinished()
     {
         RaceStarted = true;
+    }
+
+    public void LockPlayers(bool lockState) => OnHandleRunnerLockState?.Invoke(lockState);
+
+    public void ResetPlayersWayPoints() => OnResetRunnerStatus?.Invoke();
+    
+    public void GetAllPlayers()
+    {
+        _runners = FindObjectsOfType<AbstractRunner>();
+        _finalRunnersPositions = new AbstractRunner[_runners.Length];
+        _runnersThatFinished = 0;
+    }
+    
+    private void ListenOnPlayerLap(AbstractRunner runner, int lapCount)
+    {    
+        Debug.Log($"{runner} -> {lapCount}", runner.transform);
+        if (lapCount >= 3)
+        {
+            runner.FinishRace(_runnersThatFinished);
+            _finalRunnersPositions[_runnersThatFinished] = runner;
+
+            _runnersThatFinished++;
+        }
+
+
+        if ((runner is Player && _finalRunnersPositions.Contains(runner)) || _runnersThatFinished >= _runners.Length - 1)
+        {
+            RaceFinished = true;
+            
+            
+            //TODO: Remove this
+            // string aux = "Final Race Status -> ";
+            //
+            // foreach (var finalRunners in _finalRunnersPositions)
+            // {
+            //     aux += finalRunners + "  -  ";
+            // }
+            // Debug.LogError(aux);
+        }
+    }
+
+    private void CalculatePlayerPositions()
+    {
+        if (_runners == null) return;
+        if (!(_stateMachine.CurrentState is PlayState)) return;
+        
+        _runners = _runners.OrderBy(runner => runner.PositionIndex).ToArray();
+        // TODO: Remove this
+        // string aux = null;
+        //
+        // foreach (var runner in _runners)
+        // {
+        //     aux += runner + "  -  ";
+        // }
+        // Debug.Log(aux);
     }
 }
