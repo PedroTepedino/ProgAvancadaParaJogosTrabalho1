@@ -45,7 +45,7 @@ PrefabInstance:
     - target: {fileID: 1864616885464043144, guid: 1c140ea39c5adde4fa202cff08667a09,
         type: 3}
       propertyPath: TrailModule.minVertexDistance
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1864616885464043144, guid: 1c140ea39c5adde4fa202cff08667a09,
         type: 3}
@@ -71,6 +71,81 @@ PrefabInstance:
         type: 3}
       propertyPath: CollisionModule.m_Dampen.scalar
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864616885464043144, guid: 1c140ea39c5adde4fa202cff08667a09,
+        type: 3}
+      propertyPath: TrailModule.widthOverTrail.minMaxState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864616885464043144, guid: 1c140ea39c5adde4fa202cff08667a09,
+        type: 3}
+      propertyPath: TrailModule.widthOverTrail.maxCurve.m_Curve.Array.data[1].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864616885464043144, guid: 1c140ea39c5adde4fa202cff08667a09,
+        type: 3}
+      propertyPath: TrailModule.widthOverTrail.maxCurve.m_Curve.Array.data[0].time
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864616885464043144, guid: 1c140ea39c5adde4fa202cff08667a09,
+        type: 3}
+      propertyPath: TrailModule.widthOverTrail.maxCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864616885464043144, guid: 1c140ea39c5adde4fa202cff08667a09,
+        type: 3}
+      propertyPath: TrailModule.widthOverTrail.scalar
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864616885464043144, guid: 1c140ea39c5adde4fa202cff08667a09,
+        type: 3}
+      propertyPath: TrailModule.colorOverTrail.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864616885464043144, guid: 1c140ea39c5adde4fa202cff08667a09,
+        type: 3}
+      propertyPath: TrailModule.colorOverTrail.maxGradient.atime0
+      value: 30373
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864616885464043144, guid: 1c140ea39c5adde4fa202cff08667a09,
+        type: 3}
+      propertyPath: TrailModule.colorOverTrail.maxGradient.key0.a
+      value: 0.5882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864616885464043144, guid: 1c140ea39c5adde4fa202cff08667a09,
+        type: 3}
+      propertyPath: TrailModule.colorOverTrail.maxGradient.key1.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864616885464043144, guid: 1c140ea39c5adde4fa202cff08667a09,
+        type: 3}
+      propertyPath: TrailModule.colorOverTrail.minGradient.key1.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864616885464043144, guid: 1c140ea39c5adde4fa202cff08667a09,
+        type: 3}
+      propertyPath: TrailModule.colorOverTrail.minGradient.atime0
+      value: 29555
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864616885464043144, guid: 1c140ea39c5adde4fa202cff08667a09,
+        type: 3}
+      propertyPath: TrailModule.colorOverTrail.minGradient.key0.a
+      value: 0.34901962
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864616885464043144, guid: 1c140ea39c5adde4fa202cff08667a09,
+        type: 3}
+      propertyPath: TrailModule.lifetime.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864616885464043144, guid: 1c140ea39c5adde4fa202cff08667a09,
+        type: 3}
+      propertyPath: TrailModule.lifetime.minScalar
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864616885464043144, guid: 1c140ea39c5adde4fa202cff08667a09,
+        type: 3}
+      propertyPath: TrailModule.lifetime.scalar
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1864616885464043145, guid: 1c140ea39c5adde4fa202cff08667a09,
         type: 3}
@@ -130,7 +205,7 @@ PrefabInstance:
     - target: {fileID: 1864616885464043146, guid: 1c140ea39c5adde4fa202cff08667a09,
         type: 3}
       propertyPath: m_Name
-      value: WetFloorParticles
+      value: WetFloorParticles Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1864616885464043147, guid: 1c140ea39c5adde4fa202cff08667a09,
         type: 3}
@@ -141,6 +216,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c140ea39c5adde4fa202cff08667a09, type: 3}

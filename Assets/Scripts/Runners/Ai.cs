@@ -25,7 +25,7 @@ public class Ai : AbstractRunner
     private void Awake()
     {
         _rigidbody = this.GetComponent<Rigidbody>();
-        _wayPointDeviation = Random.Range(-8f, 8f);
+        _wayPointDeviation =  Random.Range(-5f, 5f);
     }
 
     private void Start()
@@ -73,7 +73,7 @@ public class Ai : AbstractRunner
         
         _currentWayPointIndex = Waypoints.Instance.GetNextWayPoint(out _currentWayPoint, _currentWayPointIndex);
 
-        _wayPointDeviation = Random.Range(-8f, 8f);
+        _wayPointDeviation = Random.Range(-5f, 5f);
         
         UpdateDestination();
     }

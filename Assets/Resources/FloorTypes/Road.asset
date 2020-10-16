@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Road
   m_EditorClassIdentifier: 
   _floorTag: Road
-  _velocity: 6
+  _velocity: 5.6

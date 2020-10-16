@@ -9671,6 +9671,7 @@ GameObject:
   - component: {fileID: 102926652841006803}
   - component: {fileID: 102926652841006805}
   - component: {fileID: 2062038917}
+  - component: {fileID: 3080890470505805674}
   m_Layer: 8
   m_Name: Player
   m_TagString: Runner
@@ -9786,13 +9787,13 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 102926652841006814}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 84b300f7ff931c74dac38b41896684db, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 2
+  m_Height: 1.7780457
   m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0, y: 1.1109772, z: 0}
 --- !u!54 &102926652841006803
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9836,6 +9837,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d3129fead2a228408b5c127502bc363, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &3080890470505805674
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102926652841006814}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.2
+  m_Center: {x: 0, y: 0.2, z: 0}
 --- !u!1 &102926653220743183
 GameObject:
   m_ObjectHideFlags: 0
@@ -10308,6 +10322,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 982450082230952641, guid: f0e27cc3f5cace64c811042c70d8f003,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 43f6eef7da85668489cb82a1ec35d67d, type: 2}
     - target: {fileID: 982450082230952642, guid: f0e27cc3f5cace64c811042c70d8f003,
         type: 3}
       propertyPath: m_Name

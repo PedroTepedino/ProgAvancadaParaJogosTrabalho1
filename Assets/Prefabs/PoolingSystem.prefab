@@ -72,3 +72,7 @@ MonoBehaviour:
       type: 3}
     tag: StunCrate
     size: 0
+  - prefab: {fileID: 5567454565633193601, guid: cd9433a9adae13049aa86df40d4898e8,
+      type: 3}
+    tag: KoGlove
+    size: 2

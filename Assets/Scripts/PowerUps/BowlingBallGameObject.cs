@@ -46,18 +46,16 @@ public class BowlingBallGameObject : MonoBehaviour
     
     private void OnCollisionEnter(Collision other)
     {
-        
-        
         if (other.gameObject.CompareTag("Runner"))
         {
-            other.gameObject.GetComponent<AbstractRunner>().ApplyForce(this._forceDirection);
-            other.gameObject.GetComponent<AbstractRunner>().Stun();
+            var runner = other.gameObject.GetComponent<AbstractRunner>();
+            runner.ApplyForce(this._forceDirection);
+            runner.Stun();
             _spawnTween.SmoothRewind();
         }
         else if (other.gameObject.CompareTag("Wall"))
         {
             _hitsInLifetime++;
-            Debug.Log(_hitsInLifetime);
             if (_hitsInLifetime >= _hitsBeforeDespawn)
             {
                 _rigidbody.velocity = Vector3.zero;

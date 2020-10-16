@@ -12,6 +12,7 @@ TagManager:
   - Runner
   - PickUpBox
   - Wall
+  - OffTrackCollider
   layers:
   - Default
   - TransparentFX

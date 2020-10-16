@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Runtime.InteropServices.WindowsRuntime;
+using System.Linq;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public struct Pool
@@ -53,6 +53,10 @@ public class PoolingSystem : MonoBehaviour
 
                  _poolDictionary.Add(_pools[i].tag, newPool);
              }
+             
+             // Needs to be done here
+             // The functions requires the creation of the pool dictionary;
+             SceneManager.activeSceneChanged += TurnOffAllObjects;
          }
      }
 
@@ -97,5 +101,16 @@ public class PoolingSystem : MonoBehaviour
          newGameObject.SetActive(false);
          DontDestroyOnLoad(newGameObject);
          return newGameObject;
+     }
+
+     private void TurnOffAllObjects(Scene from, Scene to)
+     {
+         foreach (var poolTagPair in _poolDictionary)
+         {
+             foreach (var obj in poolTagPair.Value)
+             {
+                 obj.SetActive(false);
+             }
+         }
      }
 }

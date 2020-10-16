@@ -51,13 +51,15 @@ public class GameManager : MonoBehaviour
 
     private void OnEnable()
     {
-        _stateMachine.OnStateChanged += CallOnStateChange;
+        if (_stateMachine != null)
+            _stateMachine.OnStateChanged += CallOnStateChange;
         AbstractRunner.OnLap += ListenOnPlayerLap;
     }
 
     private void OnDisable()
     {
-        _stateMachine.OnStateChanged -= CallOnStateChange;
+        if (_stateMachine != null)
+            _stateMachine.OnStateChanged -= CallOnStateChange;
         AbstractRunner.OnLap -= ListenOnPlayerLap;
     }
 
@@ -69,6 +71,8 @@ public class GameManager : MonoBehaviour
             CalculatePlayerPositions();
     }
 
+    // Formerly used In the bootstrapper
+    // TODO: Remove if not used
     public static void InitializeGameManager()
     {
         if (_instance == null) 
@@ -79,14 +83,6 @@ public class GameManager : MonoBehaviour
     {
         var gameManager = new GameObject("[GAME MANAGER]");
         _instance = gameManager.AddComponent<GameManager>();
-    }
-
-    private void CreateSingleTon()
-    {
-        if (_instance != null) Destroy(this.gameObject);
-        else _instance = this;
-        
-        DontDestroyOnLoad(this.gameObject);
     }
 
     private void CreateStateMachine()
@@ -139,6 +135,19 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void CreateSingleTon()
+    {
+        if (_instance != null)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+    }
+
     private void CallOnStateChange(IState state)
     {
         OnGameStateChanged?.Invoke(state);
@@ -169,7 +178,7 @@ public class GameManager : MonoBehaviour
     
     private void ListenOnPlayerLap(AbstractRunner runner, int lapCount)
     {    
-        Debug.Log($"{runner} -> {lapCount}", runner.transform);
+        /*Debug.Log($"{runner} -> {lapCount}", runner.transform);*/
         if (lapCount >= 3)
         {
             runner.FinishRace(_runnersThatFinished);
@@ -182,8 +191,7 @@ public class GameManager : MonoBehaviour
         if ((runner is Player && _finalRunnersPositions.Contains(runner)) || _runnersThatFinished >= _runners.Length - 1)
         {
             RaceFinished = true;
-            
-            
+
             //TODO: Remove this
             // string aux = "Final Race Status -> ";
             //

@@ -82,6 +82,15 @@
           </e>
           <e p="GameManager.cs" t="Include" />
           <e p="NavmeshAgentExtensions.cs" t="Include" />
+          <e p="Obstacles" t="Include">
+            <e p="HiddenWAll.cs" t="Include" />
+            <e p="KoGlove.cs" t="Include" />
+            <e p="KoPipe.cs" t="Include" />
+            <e p="MovingWall.cs" t="Include" />
+            <e p="PlayerVortex.cs" t="Include" />
+            <e p="PushObstacle.cs" t="Include" />
+            <e p="SurpriseWalls.cs" t="Include" />
+          </e>
           <e p="Player" t="Include">
             <e p="CameraFollow.cs" t="Include" />
             <e p="Player.cs" t="Include" />
@@ -123,6 +132,7 @@
             <e p="StateMachine.cs" t="Include" />
             <e p="StateTransition.cs" t="Include" />
           </e>
+          <e p="TrackOutline.cs" t="Include" />
           <e p="Ui" t="Include">
             <e p="AbstractMenuButton.cs" t="Include" />
             <e p="AbstractMenuPanel.cs" t="Include" />

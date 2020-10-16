@@ -28,7 +28,7 @@ public class StateMachine
 
         LastState = _currentState;
         _currentState = state;
-        Debug.Log($"Change to {state}");
+        //Debug.Log($"Change to {state}");
         _currentState.OnEnter();
         
         OnStateChanged?.Invoke(_currentState);
