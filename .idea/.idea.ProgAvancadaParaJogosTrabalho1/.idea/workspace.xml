@@ -23,72 +23,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9473896-dfce-4f57-80be-9dee82e2aab5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/HiddenWAll.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/HiddenWall.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/KoGlove.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/KoGlove.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/KoPipe.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/KoPipe.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/PushObstacle.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/PushObstacle.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/SurpriseWalls.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/SurpriseWalls.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgAvancadaParaJogosTrabalho1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgAvancadaParaJogosTrabalho1/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgAvancadaParaJogosTrabalho1/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgAvancadaParaJogosTrabalho1/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgAvancadaParaJogosTrabalho1/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgAvancadaParaJogosTrabalho1/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgAvancadaParaJogosTrabalho1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgAvancadaParaJogosTrabalho1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/PolygonPrototype/Materials/PolygonPrototype_Texture_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arts/PolygonPrototype/Materials/PolygonPrototype_Texture_01.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/PolygonPrototype/Materials/PolygonPrototype_Texture_01_Emission.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arts/PolygonPrototype/Materials/PolygonPrototype_Texture_01_Emission.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Arts/PolygonPrototype/Materials/PolygonPrototype_Texture_5.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Arts/PolygonPrototype/Materials/PolygonPrototype_Texture_5.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maposo3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Maposo3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player.physicMaterial" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player.physicMaterial" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ai.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ai.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FloorParticles/WetFloorParticles Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FloorParticles/WetFloorParticles Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Floors/Dirt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Floors/Dirt.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Floors/Grass5x5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Floors/Grass5x5.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Floors/OftrackCollider.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Floors/OftrackCollider.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Floors/Road1x1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Floors/Road1x1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Main Camera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Main Camera.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PoolingSystem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PoolingSystem.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PowerUpBatch.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PowerUpBatch.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PowerUpCrate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PowerUpCrate.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RunnerLetters.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/RunnerLetters.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StunCrate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StunCrate.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/FloorTypes/Road.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/FloorTypes/Road.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RoadTest01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RoadTest01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RoadTest02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RoadTest02.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RoadTest03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RoadTest03.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RoadTest04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RoadTest04.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RoadTest05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RoadTest05.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AiTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AiTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AiTest/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AiTest/NavMesh.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay/NavMesh.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Gameplay/NavMesh.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Gameplay/NavMesh.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Arts/Animations/Lose.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/GN-KillGothic-U-KanaNA SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/GN-KillGothic-U-KanaNA SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/NikkyouSans-B6aV SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/NikkyouSans-B6aV SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/gakuran_font SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/gakuran_font SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/jackeyfont SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/jackeyfont SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Track.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Track.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/TrackBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/TrackBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PoolingSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PoolingSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PowerUps/BowlingBallGameObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PowerUps/BowlingBallGameObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Runners/Ai.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Runners/Ai.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Setup/Bootstrapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Setup/Bootstrapper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MenuState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/MenuState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/FinishPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ui/FinishPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,76 +49,24 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9B956647-017D-4DC1-B8D3-D25EEF012467/52/978882cf/RigidbodyConstraints.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Obstacles/PlayerVortex.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Floor/RotateFloorLetters.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/03035303-2B91-4045-A0B9-6BEA329B98D3/aa/c7927137/NavMesh.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Obstacles/MovingWall.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ai/Running.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7765070B-AFF7-442E-A7A7-D482361E5065/ce/32ca0f08/Animator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ai/Win.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/03035303-2B91-4045-A0B9-6BEA329B98D3/aa/c7927137/NavMesh.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Floor/RotateFloorLetters.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ai/Running.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Runners/FieldOfView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ai/Idle.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4546799-A4AB-4267-88E4-204C69507924/cc/a4605969/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Obstacles/MovingWall.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ai/Stunned.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A4546799-A4AB-4267-88E4-204C69507924/cc/a4605969/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Obstacles/PlayerVortex.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7765070B-AFF7-442E-A7A7-D482361E5065/ce/32ca0f08/Animator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9B956647-017D-4DC1-B8D3-D25EEF012467/52/978882cf/RigidbodyConstraints.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Waypoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AbstractRunner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CountDownState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BowlingBallGameObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ai.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ai/Stuned.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ai/Idle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Waypoints.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Runners/PlayerAnimatorController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RigidBodyExtensions.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Runners/ChooseRandomIdleAnimation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PickUpBoxes.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/StunBoxGameObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/CountDownState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/LoadLevelState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Runners/FieldOfView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ai/Win.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/CountDownPanel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/AbstractMenuPanel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/PausePanel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Floor/RotateFloorLetters.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UpdatePositionsText.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ai/Lose.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUp.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Runners/RunnerPowerUpManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ai/Stunned.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimatorController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Runners/AiAnimationAnimatorController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/FinishRace.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/CountDownText.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ai/Running.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/MovingWall.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/SurpriseWalls.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/HiddenWall.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/PushObstacle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateMachine.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/KoPipe.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/TrackOutline.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/TrackBuilder.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/PlayerVortex.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Runners/AbstractRunner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/KoGlove.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Runners/Ai.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/BowlingBallGameObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Setup/Bootstrapper.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StateMachine/MenuState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/FinishPanel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PoolingSystem.cs" />
-      </list>
-    </option>
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Scripts/ForceFullHD.cs" />
+    </changedPaths>
   </component>
   <component name="ProjectId" id="1hQwrllJds2b0BM9gM0QM3BVgAz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -209,7 +107,7 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="selectedOptions">
-        <set />
+        <list />
       </option>
       <method v="2" />
     </configuration>
@@ -218,7 +116,7 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="selectedOptions">
-        <set />
+        <list />
       </option>
       <method v="2" />
     </configuration>
@@ -268,6 +166,7 @@
       <workItem from="1602624228658" duration="26400000" />
       <workItem from="1602699148944" duration="32323000" />
       <workItem from="1602783937706" duration="21277000" />
+      <workItem from="1615403778175" duration="685000" />
     </task>
     <servers />
   </component>
