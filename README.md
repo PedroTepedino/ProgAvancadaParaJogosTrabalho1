@@ -1,3 +1,3 @@
-# ProgAvancadaParaJogosTrabalho1
+# Prototype Run
 
-Projeto desenvolvido para um trabalho de Programcao avancada para jogos.
+A racing game made for a college assignment
